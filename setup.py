@@ -1,11 +1,11 @@
 import setuptools
 
 with open("README.md", "r") as fh:
-    long_description = fh.read()
+    long_description = ''.join(fh.readlines()[1:])
 
 setuptools.setup(
     name="pfsc-util",
-    version="0.22.7-dev",
+    version="0.22.7",
     url="https://github.com/alpinemath/pfsc-util",
     license="Apache 2.0",
     description="Proofscape Utilities",
